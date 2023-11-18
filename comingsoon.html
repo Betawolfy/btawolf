@@ -129,8 +129,7 @@ console.log(`Generated identifiant: ${randomString}`);
     // All text
     
     
-    const text = ` #####                                                               \n#     #  ####  #    # # #    #  ####      ####   ####   ####  #    # \n#       #    # ##  ## # ##   # #    #    #      #    # #    # ##   # \n#       #    # ##  ## # ##   # #    #    #      #    # #    # ##   # \n#       #    # # ## # # # #  # #          ####  #    # #    # # #  # \n#       #    # #    # # #  # # #  ###         # #    # #    # #  # # \n#     # #    # #    # # #   ## #    #    #    # #    # #    # #   ## \n #####   ####  #    # # #    #  ####      ####   ####   ####  #    # \n\n\n ${randomString}\n\n > user: VSS\n > password: ************\n\n X - permission required
-`;
+    const text = `${randomString}\n\n > user: VSS\n > password: ************\n\n X - permission required\n\nYou're not allowed to access this part of the site. Please contact the owner of the site if you believe this is an error.`;
 
     let index = 0;
 
@@ -138,7 +137,7 @@ console.log(`Generated identifiant: ${randomString}`);
         if (index < text.length) {
             output.textContent += text.charAt(index);
             index++;
-            setTimeout(typeText, 7); // Adjust typing speed here
+            setTimeout(typeText, 30); // Adjust typing speed here
         }
     }
 
